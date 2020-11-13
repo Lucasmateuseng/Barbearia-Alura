@@ -9,7 +9,7 @@
 .titulo_centralizado {
 	text-align: center;
 	font-size: 1.8em;
-	margin: 0 0 1em;
+	margin: 0 0 1em;	
 }
 
 .sobre p {
@@ -39,11 +39,18 @@
 
 .beneficios {
 	background: #888888;
-	padding: 20px;
+	padding: 20px;	
 }
 
 .imagem_beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem_beneficios:hover{
+	opacity: 0.8;
 }
 
 .utensilios{
