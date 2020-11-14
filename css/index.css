@@ -85,15 +85,30 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.beneficios{
-	padding: 3em 0;
-}
+
 .itens{
 	line-height: 1.5;
 }
 .itens::before{
-	content: "🟊";
+	content: "✰";
 }
 .itens:first-child {
 	font-weight: bolder;
+}
+
+@media screen and (max-width: 480px){
+	.topo, .beneficios, .conteudo_beneficios, .alinha_centro, .video{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+		margin-top: 5%;
+	}
+	nav{
+		position: static;
+	}
+	.lista_beneficios, .imagem_beneficios{
+		width: 100%;
+		margin-top: 10%;
+	}	
 }
